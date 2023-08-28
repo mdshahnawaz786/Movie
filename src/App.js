@@ -14,6 +14,7 @@ import Trending from './Components/Trending/Trending';
 import Upcoming from './Components/UpComing/Upcoming';
 import MovieDetails from './Components/MovieDetails/MovieDetails';
 import Search from './Components/Search/Search';
+import MyFooter from './Components/appFooter/MyFooter';
 
 
 
@@ -31,13 +32,13 @@ function App() {
     <div className="App">
      
      <Routes>
-      <Route path='/' element={<><Navbarrr/><Slider/><Allmovie/></>}/>
-      <Route path='/popular' element={<><Navbarrr/><Popular/></>}/>
-      <Route path='/toprated' element={<><Navbarrr/><TopRated/></>}/>
-      <Route path='/trending' element={<><Navbarrr/><Trending/></>}/>
-      <Route path='/upcoming' element={<><Navbarrr/><Upcoming/></>}/>
-      <Route path='moviedetails/:id' element={<><Navbarrr/><MovieDetails/></>} />
-      <Route path='search' element={<><Navbarrr/><Search/></>} />
+      <Route path='/' element={<><Navbarrr/><Slider/><Allmovie/><MyFooter/></>}/>
+      <Route path='/popular' element={<><Navbarrr/><Popular/><MyFooter/></>}/>
+      <Route path='/toprated' element={<><Navbarrr/><TopRated/><MyFooter/></>}/>
+      <Route path='/trending' element={<><Navbarrr/><Trending/><MyFooter/></>}/>
+      <Route path='/upcoming' element={<><Navbarrr/><Upcoming/><MyFooter/></>}/>
+      <Route path='moviedetails/:id' element={<><Navbarrr/><MovieDetails/><MyFooter/></>} />
+      <Route path='search' element={<><Navbarrr/><Search/><MyFooter/></>} />
       <Route path="/*" element={<h1>Page Not Found</h1>}></Route>
      </Routes>
     </div>

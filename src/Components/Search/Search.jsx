@@ -12,7 +12,8 @@ const Search = () => {
     <div className='searchBox'>
               {/* <h2 style={{fontSize:"2rem",  color:"rgb(113, 188, 242)",textAlign:"center"}}>Searched Results</h2> */}
 
-        <Card movies={search}/>
+        {/* <Card movies={search}/> */}
+        {search.length > 0 ? <Card movies={search}/> : <>Loading</>}
     </div>
   )
 }
