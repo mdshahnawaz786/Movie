@@ -13,7 +13,7 @@ const Search = () => {
               {/* <h2 style={{fontSize:"2rem",  color:"rgb(113, 188, 242)",textAlign:"center"}}>Searched Results</h2> */}
 
         {/* <Card movies={search}/> */}
-        {search.length > 0 ? <Card movies={search}/> : <>Loading</>}
+        {search.length > 0 ? <Card movies={search}/> : <><h3>No Result Found</h3></>}
     </div>
   )
 }
