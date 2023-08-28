@@ -1,0 +1,83 @@
+.carousel {
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    color: white;
+  }
+  
+  .caption{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.377),rgba(0, 0, 0, 0.5));
+    top: 0;
+    display: flex;
+    align-items:end;
+    justify-content: flex-start;
+    
+  }
+  .carouselHolder{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+ .carouselHolder:hover{
+      cursor: pointer;
+      color: rgb(33,150,243);
+  }
+  
+  #movieDiscription {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+
+  
+  .imdbicon {
+    color: rgb(247, 207, 0);
+  }
+  
+  .slide {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .carousel-inner {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .carousel-item {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .carouselTitle{
+    font-weight: 900;
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .carouselReleaseDate{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #carouselVote{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .overviewCarousel{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+ 
