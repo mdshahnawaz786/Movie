@@ -28,7 +28,7 @@ const Card = ({ movies }) => {
                         </div>
                         <div className="posterImageReleasingDateRating">
                           {ele && ele.release_date}
-                          <span>{ele && ele.vote_average}</span>
+                          <span>{ele && ele.vote_average}{" "} <i className="imdbicon fa-brands fa-imdb"></i></span>
                         </div>
                       </div>
                     </div>
