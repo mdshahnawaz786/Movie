@@ -88,9 +88,9 @@ export function filterSearch(dispatch,all,searchMovie){
 
 
       if(searchMovie === ""){
-        alert("aaaaaaaaaa")
+        alert("Input field should not be empty")
         return
-        
+
       }
       const arr = []
 
