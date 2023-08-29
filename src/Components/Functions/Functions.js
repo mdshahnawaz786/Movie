@@ -84,45 +84,45 @@ export async function trailer(id,dispatch){
  
 
 export function filterSearch(dispatch,all,searchMovie){
-      let boolean = false
+      
+
+
+      if(searchMovie === ""){
+        alert("aaaaaaaaaa")
+        return
+        
+      }
       const arr = []
-     
-        for(let i=0; i<all.length; i++){
-          if(arr.length === 0){
-            if((all[i].original_title.toLowerCase()).includes(searchMovie.toLowerCase())){
-              arr.push(all[i])   
-              break
-              // console.log(arr); 
-              }
+
+      const filterArr = all.filter((ele)=>{
+          if(((ele.original_title.toLowerCase()).includes(searchMovie.toLowerCase()))){
+              return ele
           }
-          else if(arr.length !==0){
-            for(let j=0; j<arr.length; j++){
-              if((arr[j].original_title.toLowerCase()).includes(all[i].original_title.toLowerCase())){
-                  boolean = false 
-                }
-                else{
-                  boolean = true
-                }
-            }
-            if(boolean === true){
-              arr.push(all[i])
-            }
-          }
-          
-         
+      })
+
+      for(let i=0; i<filterArr.length; i++){
+        if(arr.length === 0){
+          arr.push(filterArr[i])
         }
-
-     
-
-     console.log(arr);
-      // const searchArr = all.filter((ele)=>{
-      //   if((ele.original_title.toLowerCase()).includes(searchMovie.toLowerCase())){
-      //     console.log(ele);
-      //     return ele
-      //   }
-      // })
+        else{
+          if(isDuplicate(filterArr[i], arr)){
+            arr.push(filterArr[i])
+          }
+        }
+      }
+       
       dispatch({
         type : "search",
         payload: arr
       })
+}
+
+
+function isDuplicate(filterArr, arr){
+    for(let i=0; i<arr.length; i++){
+      if(arr[i].id === filterArr.id){
+        return false
+      }
+    }
+    return true
 }

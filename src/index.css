@@ -9,3 +9,18 @@ body{
     background-color: black;
 
 }
+
+
+*::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: black;        /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background:linear-gradient(rgb(13,154,252),red);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid black;  /* creates padding around scroll thumb */
+}
