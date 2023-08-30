@@ -3,6 +3,6 @@ import basicReducer from "./Reducer";
 import logger from "redux-logger";
 
 //  const myStore = legacy_createStore(basicReducer,applyMiddleware(logger))
- const myStore = legacy_createStore(basicReducer)
+const myStore = legacy_createStore(basicReducer);
 
- export default myStore
+export default myStore;

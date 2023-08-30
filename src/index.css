@@ -1,26 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    background-color: black;
-
+body {
+  height: 100vh;
+  background-color: black;
 }
-
 
 *::-webkit-scrollbar {
-  width: 12px;               /* width of the entire scrollbar */
+  width: 12px; /* width of the entire scrollbar */
 }
 
 *::-webkit-scrollbar-track {
-  background: black;        /* color of the tracking area */
+  background: black; /* color of the tracking area */
 }
 
 *::-webkit-scrollbar-thumb {
-  background:linear-gradient(rgb(13,154,252),red);    /* color of the scroll thumb */
-  border-radius: 20px;       /* roundness of the scroll thumb */
-  border: 3px solid black;  /* creates padding around scroll thumb */
+  background: linear-gradient(
+    rgb(13, 154, 252),
+    rgb(34, 32, 32)
+  ); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid black; /* creates padding around scroll thumb */
 }

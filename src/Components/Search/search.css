@@ -1,5 +1,9 @@
-.searchBox{
-    min-height: 90vh;
-    display: flex;
-    justify-content: center;
+.searchBox {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.searchError {
+  color: rgb(33, 150, 243);
 }

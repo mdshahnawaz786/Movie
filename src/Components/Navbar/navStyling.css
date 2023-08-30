@@ -1,0 +1,41 @@
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.navbar-brand{
+    /* border: 2px solid white; */
+    width: 250px;
+    text-align: center;
+    
+}
+
+.bg-body-tertiary {
+    /* border: 2px solid white; */
+}
+
+
+.navbar-collapse{
+    /* border: 2px solid white; */
+    font-size: 1rem;
+        
+}
+
+
+.me-auto{
+    /* border: 2px  solid white; */
+  /* width: 500px; */
+  /* gap: 10px; */
+    /* text-align: center; */
+    
+}
+
+.d-flex{
+    /* border: 2px  solid white; */
+    /* width: 250px; */
+}
+
+.active{
+    color: red;
+}
