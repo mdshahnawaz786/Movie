@@ -126,7 +126,15 @@
 .movieTitle {
   font-size: 3rem;
   font-weight: 700;
-  color: rgb(113, 188, 242);
+  background-color: #ffffff;
+  background-image: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #6284ff 50%,
+    #ff0000 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .movieFullDetails p {
